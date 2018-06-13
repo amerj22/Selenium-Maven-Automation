@@ -1,5 +1,6 @@
 package com.dice;
 
+import java.time.LocalDateTime;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -45,9 +46,12 @@ public class DiceFindJob {
 			System.out.println("nothing avaliable. ");
 		}
 		
+		
+		
 		//driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 		Thread.sleep(3000);
 		driver.quit();
+		System.out.println("TEST COMPLETED "+ LocalDateTime.now());
 		
 
 	}
